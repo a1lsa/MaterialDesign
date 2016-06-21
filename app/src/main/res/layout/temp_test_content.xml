@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="showSnackBar"
+            android:gravity="center"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="请输入用户名">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="请输入密码">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.design.widget.TextInputLayout>
+        <!--这里需要注意的是，TextInputLayout的颜色来自style中的colorAccent的颜色：-->
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/floatButton"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            app:rippleColor="@color/colorPrimary"
+            android:clickable="true"
+            android:src="@mipmap/ic_launcher"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/snackbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+</LinearLayout>
